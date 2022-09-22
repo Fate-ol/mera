@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', {
+    "title" : "Каталог"
+  })
+<body>
+
+@@include('html/header.html', {
+  "header-wrap": "header-wrapper",
+  "header-styles" : "header-light"
+})
+
+@@include('html/breadcrumbs.html', {})
+
+<div class="section-b">
+  <section class="section section-padd pt-0">
+    <div class="catalog-column">
+      <div class="catalog-column__left">
+        <div class="catalog-nav">
+          <div class="catalog-nav__head">
+            <a href="">КАТАЛОГ</a>
+          </div>
+          <nav>
+            <ul>
+              <li class="have-submenu">
+                <a href=""><span><img src="@img/catalog/ico-ispitanie.svg" alt=""></span>Системы испытаний</a>
+                <ul>
+                  <li><a href="">Системы испытаний 1</a></li>
+                  <li><a href="" class="active">Системы испытаний 2</a></li>
+                  <li><a href="">Системы испытаний 3</a></li>
+                  <li><a href="">Системы испытаний 4</a></li>
+                </ul>
+              </li>
+              <li class="have-submenu">
+                <a href=""><span><img src="@img/catalog/ico-ismerenie.svg" alt=""></span>Системы измерений</a>
+                <ul>
+                  <li><a href="">Системы измерений 1</a></li>
+                  <li><a href="">Системы измерений 2</a></li>
+                  <li><a href="">Системы измерений 3</a></li>
+                  <li><a href="">Системы измерений 4</a></li>
+                </ul>
+              </li>
+              <li class="have-submenu">
+                <a href=""><span><img src="@img/catalog/ico-ivk.svg" alt=""></span>ИВК</a>
+                <ul>
+                  <li><a href="">Серия PXI</a></li>
+                  <li><a href="">Серия MS</a></li>
+                  <li><a href="">Серия MC</a></li>
+                  <li><a href="">Специализированные измерительные приборы</a></li>
+                  <li><a href="">Вспомогательное оборудование</a></li>
+                </ul>
+              </li>
+              <li class="have-submenu">
+                <a href=""><span><img src="@img/catalog/ico-po.svg" alt=""></span>ПО</a>
+                <ul>
+                  <li><a href="">ПО 1</a></li>
+                  <li><a href="">ПО 2</a></li>
+                  <li><a href="">ПО 3</a></li>
+                  <li><a href="">ПО 4</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="catalog-column__right">
+        <div class="filtr">
+          <div class="filtr__head">
+            <span>Фильтр по параметрам</span>
+            <a href="" class="filtr__clear active"><i></i>Сбросить все</a> <!--показывать кнопку при одном выбранном фильтре-->
+            <a href="" class="filtr__more">Развернуть <i></i></a>
+          </div>
+          <div class="filtr__content">
+            <div class="filtr__line open">
+              <div class="filtr__subhead"><a href="">Динамические процессы</a></div>
+              <div class="filtr__items">
+                <div class="filtr__item">
+                  <label ><input type="checkbox" name="" id="" class="styler">Вибрация и удары</label>
+                </div>  
+                <div class="filtr__item">
+                  <label ><input type="checkbox" name="" id="" class="styler">Пульсации давления</label>
+                </div>  
+                <div class="filtr__item">
+                  <label ><input type="checkbox" name="" id="" class="styler">Динамические деформации</label>
+                </div>  
+                <div class="filtr__item">
+                  <label ><input type="checkbox" name="" id="" class="styler">Акустические шумы</label>
+                </div>
+              </div>
+            </div>
+            <div class="filtr__line open">
+              <div class="filtr__subhead"><a href="">Статические процессы</a></div>
+              <div class="filtr__items">
+                <div class="filtr__item">
+                  <label ><input type="checkbox" name="" id="" class="styler">Давление</label>
+                </div>  
+                <div class="filtr__item">
+                  <label ><input type="checkbox" name="" id="" class="styler">Температура</label>
+                </div>  
+                <div class="filtr__item">
+                  <label ><input type="checkbox" name="" id="" class="styler">Эл. напряжение</label>
+                </div>  
+                <div class="filtr__item">
+                  <label ><input type="checkbox" name="" id="" class="styler">Ток</label>
+                </div>  
+                <div class="filtr__item">
+                  <label ><input type="checkbox" name="" id="" class="styler">Заряд</label>
+                </div>  
+                <div class="filtr__item">
+                  <label ><input type="checkbox" name="" id="" class="styler">Звуковое давление</label>
+                </div>  
+                <div class="filtr__item">
+                  <label ><input type="checkbox" name="" id="" class="styler">Относительная деформация</label>
+                </div>
+              </div>
+            </div>
+            <div class="filtr__line open">
+              <div class="filtr__subhead"><a href="">Исполнение</a></div>
+              <div class="filtr__items">
+                <div class="filtr__item">
+                  <label ><input type="checkbox" name="" id="" class="styler">Бортовое</label>
+                </div>  
+                <div class="filtr__item">
+                  <label ><input type="checkbox" name="" id="" class="styler">Стационарное</label>
+                </div>  
+                <div class="filtr__item">
+                  <label ><input type="checkbox" name="" id="" class="styler">Мобильное</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="section-pagehead">
+          <h2 class="h2">Серия PXI</h2>
+        </div>  
+        <p><b>Стандарт PXI</b> (PCI eXtention for Instrumentation) разработан фирмой National Instruments® как расширение стандарта CompactPCI для измерений и исследований. Стандарт изначально ориентирован на контрольно-измерительную, диагностическую, информационно-вычислительную технику.</p>
+        <p>Шина <b>PXI</b> представляет собой прочную платформу для подключения периферийных устройств к материнской плате компьютера, сочетает особенности шины PCI с модульной архитектурой.</p>
+        <p>Для построения систем измерения <b>МЕРА</b> использует собственные разработки, основанные на разработки на <b>PXI, PXIe</b> платформах. </p>
+
+
+        <h4>Измерительно-вычислительные комплексы</h4>
+        <div class="catalog-items">
+          <div class="catalog-item">
+            <a href=""></a>
+            <div class="catalog-item__label"><span>Мобильный</span></div>
+            <div class="catalog-item__pic"><img src="@img/temp5.png" alt=""></div>
+            <div class="catalog-item__name">MIC-355М</div>
+            <div class="catalog-item__props">
+              <span>6 слотов</span>
+              <span>216 кГц/канал</span>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <a href=""></a>
+            <div class="catalog-item__label"><span>Мобильный</span></div>
+            <div class="catalog-item__pic"><img src="@img/temp6.png" alt=""></div>
+            <div class="catalog-item__name">MIC-551</div>
+            <div class="catalog-item__props">
+              <span>4 слота</span>
+              <span>216 кГц/канал</span>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <a href=""></a>
+            <div class="catalog-item__label"><span>Мобильный</span></div>
+            <div class="catalog-item__pic"><img src="@img/temp5.png" alt=""></div>
+            <div class="catalog-item__name">MIC-355М</div>
+            <div class="catalog-item__props">
+              <span>6 слотов</span>
+              <span>216 кГц/канал</span>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <a href=""></a>
+            <div class="catalog-item__label"><span>Мобильный</span></div>
+            <div class="catalog-item__pic"><img src="@img/temp6.png" alt=""></div>
+            <div class="catalog-item__name">MIC-551</div>
+            <div class="catalog-item__props">
+              <span>4 слота</span>
+              <span>216 кГц/канал</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="line-grey"></div>
+
+        <h4>Модули серии PXI</h4>
+        <div class="catalog-items">
+          <div class="catalog-item">
+            <a href=""></a>
+            <div class="catalog-item__icons">
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение вибрации и ударов</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-vibracii-i-udarov.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение пульсаций давления</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-pulsacij-davleniya.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение денамических деформаций</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-denamicheskih-deformacij.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение акустических шумов</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-akusticheskih-shumov.svg" alt=""></div>
+              </span>
+              <!--<span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение перемещений</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-peremeshchenij.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение деформации</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-deformacii.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-1.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение температур</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-temperatura.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение давлений</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-davlenij.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение напряжения</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-napryazheniya.svg" alt=""></div>
+              </span>
+              -->
+            </div>
+            <div class="catalog-item__pic"><img src="@img/temp7.png" alt=""></div>
+            <div class="catalog-item__name">MX-224</div>
+            <div class="catalog-item__text">Универсальный модуль для динамических измерений</div>
+            <div class="catalog-item__props">
+              <span>4 канала</span>
+              <span>422 Гц ... 216 кГц</span>
+              <span>±10 В</span>
+              <span>24 бит</span>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <a href=""></a>
+            <div class="catalog-item__icons">
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение вибрации и ударов</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-vibracii-i-udarov.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение пульсаций давления</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-pulsacij-davleniya.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение денамических деформаций</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-denamicheskih-deformacij.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение акустических шумов</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-akusticheskih-shumov.svg" alt=""></div>
+              </span>
+              <!--<span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение перемещений</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-peremeshchenij.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение деформации</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-deformacii.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-1.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение температур</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-temperatura.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение давлений</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-davlenij.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение напряжения</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-napryazheniya.svg" alt=""></div>
+              </span>
+              -->
+            </div>
+            <div class="catalog-item__pic"><img src="@img/temp7.png" alt=""></div>
+            <div class="catalog-item__name">MX-224</div>
+            <div class="catalog-item__text">Универсальный модуль для динамических измерений</div>
+            <div class="catalog-item__props">
+              <span>4 канала</span>
+              <span>422 Гц ... 216 кГц</span>
+              <span>±10 В</span>
+              <span>24 бит</span>
+            </div>
+          </div>          
+          <div class="catalog-item">
+            <a href=""></a>
+            <div class="catalog-item__icons">
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение вибрации и ударов</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-vibracii-i-udarov.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение пульсаций давления</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-pulsacij-davleniya.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение денамических деформаций</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-denamicheskih-deformacij.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение акустических шумов</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-akusticheskih-shumov.svg" alt=""></div>
+              </span>
+              <!--<span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение перемещений</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-peremeshchenij.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение деформации</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-deformacii.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-1.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение температур</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-temperatura.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение давлений</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-davlenij.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение напряжения</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-napryazheniya.svg" alt=""></div>
+              </span>
+              -->
+            </div>
+            <div class="catalog-item__pic"><img src="@img/temp7.png" alt=""></div>
+            <div class="catalog-item__name">MX-224</div>
+            <div class="catalog-item__text">Универсальный модуль для динамических измерений</div>
+            <div class="catalog-item__props">
+              <span>4 канала</span>
+              <span>422 Гц ... 216 кГц</span>
+              <span>±10 В</span>
+              <span>24 бит</span>
+            </div>
+          </div>          
+          <div class="catalog-item">
+            <a href=""></a>
+            <div class="catalog-item__icons">
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение вибрации и ударов</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-vibracii-i-udarov.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение пульсаций давления</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-pulsacij-davleniya.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение денамических деформаций</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-denamicheskih-deformacij.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение акустических шумов</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-akusticheskih-shumov.svg" alt=""></div>
+              </span>
+              <!--<span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение перемещений</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-peremeshchenij.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение деформации</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-deformacii.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-1.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение температур</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-temperatura.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение давлений</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-davlenij.svg" alt=""></div>
+              </span>
+              <span class="catalog-item__icon">
+                <div class="catalog-item__icont">Измерение напряжения</div>
+                <div class="catalog-item__iconp"><img src="@img/catalog/izmerenie-napryazheniya.svg" alt=""></div>
+              </span>
+              -->
+            </div>
+            <div class="catalog-item__pic"><img src="@img/temp7.png" alt=""></div>
+            <div class="catalog-item__name">MX-224</div>
+            <div class="catalog-item__text">Универсальный модуль для динамических измерений</div>
+            <div class="catalog-item__props">
+              <span>4 канала</span>
+              <span>422 Гц ... 216 кГц</span>
+              <span>±10 В</span>
+              <span>24 бит</span>
+            </div>
+          </div>
+
+        </div>
+
+
+        
+
+
+
+      </div>
+    </div>
+  </section>
+</div>
+
+
+@@include('html/footer.html', {})
+@@include('html/scripts.html', {})
+ 
+</body>
+</html>
